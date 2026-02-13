@@ -1,0 +1,19 @@
+git clone <url do repositório>  ---> clona o repositório
+
+git diff ---> mostra as mudanças feitas
+
+git log ---> trás um históricos dos últimos commits feitos
+
+git restore <coloque o arquivo e/ou use um condando antes do arquivo> ---> serve para voltar ou para última coisa feita antes do commits ou deletar a última mudança feita
+
+git pull ---> faz um merge local, trazendo todos os arquivos e novas informações que tinha no repositório, mas não tinha no pc local
+
+git fetch
+
+git branch ---> vê todas as branch's do projeto 
+git branch exemplo ---> cria uma nova branch
+git checkout exemplo ---> troca a branch atual pela nova branch, "exemplo"
+
+git merge <nome da branch> ---> faz com que um ou mais arquivos que só exitiam em uma branch específica possa ser adicionado nessa outra branch
+Exemplo: git branch ---> main e teste
+         git merge teste ---> trás os arquivos da branch teste para a main (que está selecionada) 

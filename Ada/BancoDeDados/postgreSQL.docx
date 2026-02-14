@@ -1,0 +1,71 @@
+1ª Forma Normal: cada atributo deve conter apenas 1 valor por tupla.
+
+2ª Forma Normal: cada elemento deve depender apenas da sua chave primária.
+
+3ª Forma Normal: um elemento não chave, não pode depender de oputro elemento não chave da tabela.
+
+
+-----------------------------------------------------
+
+criando uma tabela com chave estrageira (no PostgreSQL):
+
+create table professores(
+
+	id_professor integer,
+	celular varchar(14),
+	nome varchar(40),
+	id_disciplina integer,
+	primary key (id_professor),
+	foreign key (id_disciplina)
+	references disciplinas(id_disciplina)
+
+)
+
+
+Mostrar tudo de uma tabela:
+
+select * from <nome da tabela>
+
+
+Inserir um dado em uma tabela:
+
+insert into <nome da tabela> values 
+(id, nome, ementa) ---> são os campos da tabela
+
+Inserindo multiplos valores em uma tabela:
+
+insert into disciplinas values: 
+(2, 'matematica', 'algebra e geometria'),
+(3, 'fisica', 'cinematica e dinamica');
+
+
+inserindo dados de um arquivo externo (csv):
+
+copy <tabela> (id, nome, ementa)
+from '<local do arquivo>'
+delimiter ',' ---> como os valores são separados
+svc header ---> ignora o header do arquivo (fist line)
+
+Atualizando dados já adicionados anteriormente:
+
+update disciplinas set nome = 'fisica'
+where id_disciplina = 3
+
+Deletar  itens de uma tabela:
+
+delete from disciplinas
+where id_disciplina = 3
+
+Criando view's para pessoas específicas:
+
+create view qualquer_pessoa as (
+	select 
+		id_disciplina,
+		nome
+	from disciplinas
+)
+
+
+criando um index em uma tabela para facilitar na busca em grandes tabelas:
+
+create index nome_index on disciplinas(nome)

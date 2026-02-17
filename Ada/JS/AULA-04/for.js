@@ -33,7 +33,7 @@ console.log(numeros.slice(2, 5));
 
 console.clear();
 
-numeros.push(110);
+numeros.push(110); //pode adicionar mais de um número, basta separar por vírgula
 console.log(numeros);
 
 console.clear();

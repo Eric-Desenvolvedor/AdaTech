@@ -1,0 +1,3 @@
+Nome: "Eric"
+Idade: 16
+Altura: 1.68

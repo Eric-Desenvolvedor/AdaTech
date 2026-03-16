@@ -1,0 +1,36 @@
+.btn {
+    background-color: green;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 5px;
+    border: none;
+}
+
+.btnZerar {
+    background-color: rgb(194, 0, 0);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 5px;
+    border: none;
+}
+
+.themeDark {
+    background-color: rgb(24, 24, 24);
+    color: white;
+}
+
+.themeBtnDark {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 4px 12px;
+    border-radius: 5px;
+    border: none;
+}
+
+.themeBTN {
+    padding: 4px 12px;
+    border-radius: 5px;
+    border: none;
+    background-color: black;
+    color: white;
+}

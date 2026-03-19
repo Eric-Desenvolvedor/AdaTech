@@ -3,7 +3,7 @@ import React from "react";
 import "./styles/App.css";
 import Navbar from "./components/Navbar/Navbar";
 import { Article } from "./components/Article/Article";
-// import {Counter} from "./components/Counter/Counter"
+import {Counter} from "./components/Counter/Counter"
 
 import art1IMG from "./assets/images/article.webp";
 import art2IMG from "./assets/images/article1.jfif";
@@ -15,7 +15,7 @@ class App extends React.Component {
       <>
         <Navbar />
 
-        <section id="articles">
+        {/* <section id="articles">
           <Article
             title="Desingning Dashboards"
             provider="NASA"
@@ -43,7 +43,9 @@ class App extends React.Component {
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia rem natus vitae odio alias? Voluptatum labore dolor maiores laboriosam cumque nulla incidunt optio enim fugiat! Aliquam non dolorem harum dignissimos."
             thumbnail={art1IMG}
           />
-        </section>
+        </section> */}
+
+        <Counter />
       </>
     );
   }
